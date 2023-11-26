@@ -32,7 +32,7 @@ app.get("/", function(req, res){
 
 
 
-    // // When Data looked in html formate
+// When Data looked in html formate
     // var today = new Date();
     // var currentDate = today.getDay();
 
@@ -43,7 +43,7 @@ app.get("/", function(req, res){
     // }
 
 
-    // // When Multiple Data lookend in html formate
+// When Multiple Data lookend in html formate
     // var today = new Date();
     // var currentDate = today.getDay();
 
@@ -56,8 +56,7 @@ app.get("/", function(req, res){
     // }
 
 
-
-    // // When Multiple Boiler Plate Data lookend in html Pages.
+// When Multiple Boiler Plate Data lookend in html Pages.
     // var today = new Date();
     // var currentDate = today.getDay();
 
@@ -67,7 +66,8 @@ app.get("/", function(req, res){
     //     res.sendFile(__dirname + "/weekday.html");
     // }
 
-// //use to boiler plate
+
+// use to boiler plate
     // var today = new Date();
     // var currentDate = today.getDay();
     // var day = "";
@@ -80,6 +80,7 @@ app.get("/", function(req, res){
     // }
 
 
+//
     var today = new Date();
     var currentDay = today.getDay();
     var day = "";
