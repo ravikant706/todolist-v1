@@ -7,7 +7,7 @@ const ejs = require("ejs");
 
 const app = express();
 
-var items = [];
+var items = ["Buy Food", "Cook Food", "Eat Food"];
 
 app.use(bodyParser.urlencoded({extended: true}));
 
