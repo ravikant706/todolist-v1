@@ -135,16 +135,22 @@ app.get("/", function(req, res){
 
 
                 app.post("/", function(req, res) {
+
                     let item = req.body.newItem;
 
-                    items.push(item);
+                    if(req.body.list === "Work"){
+                        workItems.push(item);
+                        res.redirect("/work");
+                    } else {
+                        items.push(item);
+                        res.redirect("/");
+                    }
 
-                    res.redirect("/");
-                    
                 });
 
+
                 app.get("/work", function(req, res){
-                    res.render("list", {listTitle: "work list", newListItems: workItems})
+                    res.render("list", {listTitle: "Work List", newListItems: workItems});  
                 })
 
                 app.post("/work", function(req, res){
