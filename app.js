@@ -122,7 +122,8 @@ app.get("/", function(req, res){
 
         // use javescript mathod to show day
             
-            let day = date();
+            let day = date.getDate(); 
+            // let day = date.getDate();
 
 
             res.render('list', {listTitle: day, newListItems: items});
