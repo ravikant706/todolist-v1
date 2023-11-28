@@ -159,6 +159,10 @@ app.get("/", function(req, res){
                     res.redirect("/work");
                 }) 
 
+                app.get("/about", function(req, res){
+                    res.render("about");
+                })
+
 
 
     
